@@ -1,0 +1,19 @@
+%YAML 1.3
+---
+- Rule:
+  - MouseGesture: Mouse Up
+  - KeyPress:
+    - [Super_L, Up]
+    - click
+- Rule:
+  - MouseGesture: Mouse Left
+  - Execute: [solaar, config, MX, change-host, '1']
+- Rule:
+  - MouseGesture: Mouse Gesture Button
+  - KeyPress:
+    - Super_L
+    - click
+- Rule:
+  - MouseGesture: Mouse Down
+  - Execute: [solaar, config, MX, change-host, '2']
+...
